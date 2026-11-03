@@ -2,5 +2,38 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>NoManos</title>
+        <item>
+            <title>2.5.0</title>
+            <pubDate>Mon, 02 Nov 2026 21:04:23 -0800</pubDate>
+            <sparkle:version>20261103232325</sparkle:version>
+            <sparkle:shortVersionString>2.5.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Usage-limit announcements and transcript Git rollback.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.0/NoManos-2.5.0.zip" length="268470712" type="application/octet-stream" sparkle:edSignature="ARcDveDbHYEoHMNSkTVc4moxRKQDMGmMVYhQ5xRSquHeCkDcMNOqn3xILaqIIRA3YSjrOHiqTSEwl5u5WjhOBw=="/>
+        </item>
+        <item>
+            <title>2.5.0</title>
+            <pubDate>Mon, 02 Nov 2026 21:04:23 -0800</pubDate>
+            <sparkle:version>20261103045549</sparkle:version>
+            <sparkle:shortVersionString>2.5.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Usage-limit announcements and transcript Git rollback.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos/releases/download/v2.5.0/NoManos-2.5.0.zip" length="268303369" type="application/octet-stream" sparkle:edSignature="UgaxE41NYXFHfsU32NEwjJkDm5hQKgIhM38YLB57U5Fca6v+vfFdLSo/1jhGKO8/OvexcVnw2RISW1+xsK16CQ=="/>
+        </item>
+        <item>
+            <title>2.4.0</title>
+            <pubDate>Mon, 02 Nov 2026 14:52:07 -0800</pubDate>
+            <sparkle:version>20261102225059</sparkle:version>
+            <sparkle:shortVersionString>2.4.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Release 2.4.0 with Sparkle auto-updates and licensing.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos/releases/download/v2.4.0/NoManos-2.4.0.zip" length="268047829" type="application/octet-stream" sparkle:edSignature="PvMiyCW4hoJg+pTH3tv0xf+CjaoSerXwz5gdce9ITEismsUhmwet9mTVY42yemMR73qdWsc7btxrU2TDLs5kBA=="/>
+        </item>
     </channel>
 </rss>
