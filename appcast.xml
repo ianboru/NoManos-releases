@@ -3,6 +3,17 @@
     <channel>
         <title>NoManos</title>
         <item>
+            <title>2.5.2</title>
+            <pubDate>Tue, 03 Nov 2026 23:58:30 -0800</pubDate>
+            <sparkle:version>20261104075348</sparkle:version>
+            <sparkle:shortVersionString>2.5.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Every reply in the transcript is now spoken aloud: NoManos no longer drops its own replies based on what you said, or as near-duplicates. Other audio is lowered while you or NoManos speak, and never while the mic or voice is muted. Also fixes background jobs (kept through amendments, cancelled with their task), vague follow-up messages (the assistant's last reply is always supplied), and short replies to the assistant's questions (no longer ignored). Ignored speech is now visible in the transcript.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.2/NoManos-2.5.2.zip" length="268522088" type="application/octet-stream" sparkle:edSignature="BynzpP8Jol1sEpn8zhnVngASizX/Bs5p0plwZjAV2MSmPMQFktc0o6cRxLfFiHZHnFGtOzml84qrVyBU2DBXCQ=="/>
+        </item>
+        <item>
             <title>2.5.1</title>
             <pubDate>Tue, 03 Nov 2026 16:03:33 -0800</pubDate>
             <sparkle:version>20261103235855</sparkle:version>
@@ -23,17 +34,6 @@
             <description sparkle:format="markdown"><![CDATA[Usage-limit announcements and transcript Git rollback.
 ]]></description>
             <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.0/NoManos-2.5.0.zip" length="268470712" type="application/octet-stream" sparkle:edSignature="ARcDveDbHYEoHMNSkTVc4moxRKQDMGmMVYhQ5xRSquHeCkDcMNOqn3xILaqIIRA3YSjrOHiqTSEwl5u5WjhOBw=="/>
-        </item>
-        <item>
-            <title>2.5.0</title>
-            <pubDate>Mon, 02 Nov 2026 21:04:23 -0800</pubDate>
-            <sparkle:version>20261103045549</sparkle:version>
-            <sparkle:shortVersionString>2.5.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Usage-limit announcements and transcript Git rollback.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos/releases/download/v2.5.0/NoManos-2.5.0.zip" length="268303369" type="application/octet-stream" sparkle:edSignature="UgaxE41NYXFHfsU32NEwjJkDm5hQKgIhM38YLB57U5Fca6v+vfFdLSo/1jhGKO8/OvexcVnw2RISW1+xsK16CQ=="/>
         </item>
     </channel>
 </rss>
