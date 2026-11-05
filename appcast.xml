@@ -3,6 +3,17 @@
     <channel>
         <title>NoManos</title>
         <item>
+            <title>2.5.3</title>
+            <pubDate>Wed, 04 Nov 2026 16:20:32 -0800</pubDate>
+            <sparkle:version>20261105001500</sparkle:version>
+            <sparkle:shortVersionString>2.5.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Smoother transcript scrolling: the transcript no longer re-filters every project's chat on each update, rows don't redraw on every status change, and pages are laid out once so dragging doesn't stutter. Adds transcript pagination with page size and time-range controls. Recovers from model tool-formatting errors by retrying the turn once. Understands more ways to say start or stop listening.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.3/NoManos-2.5.3.zip" length="268623474" type="application/octet-stream" sparkle:edSignature="02HGjaPusIFTx65QD0mMnPkoEtgsR/l/8x+1dvE9xKpqwUzjd0SQMHBwebua4ab11e8wC8TvWKNW1ejzsirMDQ=="/>
+        </item>
+        <item>
             <title>2.5.2</title>
             <pubDate>Tue, 03 Nov 2026 23:58:30 -0800</pubDate>
             <sparkle:version>20261104075348</sparkle:version>
@@ -23,17 +34,6 @@
             <description sparkle:format="markdown"><![CDATA[Background jobs now always belong to a task and keep it active until they finish; shown nested under their task.
 ]]></description>
             <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.1/NoManos-2.5.1.zip" length="268491903" type="application/octet-stream" sparkle:edSignature="n4ceja3K39gLrft2acAMGu0r/GZAnQIDYvZnIrmDBzS6N+aMTRptpGPFjrn94hFkhlNLebp7jcKqcjeqgeTEAg=="/>
-        </item>
-        <item>
-            <title>2.5.0</title>
-            <pubDate>Mon, 02 Nov 2026 21:04:23 -0800</pubDate>
-            <sparkle:version>20261103232325</sparkle:version>
-            <sparkle:shortVersionString>2.5.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Usage-limit announcements and transcript Git rollback.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.0/NoManos-2.5.0.zip" length="268470712" type="application/octet-stream" sparkle:edSignature="ARcDveDbHYEoHMNSkTVc4moxRKQDMGmMVYhQ5xRSquHeCkDcMNOqn3xILaqIIRA3YSjrOHiqTSEwl5u5WjhOBw=="/>
         </item>
     </channel>
 </rss>
