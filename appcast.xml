@@ -3,6 +3,17 @@
     <channel>
         <title>NoManos</title>
         <item>
+            <title>2.5.4</title>
+            <pubDate>Wed, 11 Nov 2026 19:32:06 -0800</pubDate>
+            <sparkle:version>20261112032710</sparkle:version>
+            <sparkle:shortVersionString>2.5.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Fixes Node.js CLI launching by prioritizing local Node paths and clearly explaining missing or outdated Node runtimes. Allows dropping images directly into the prompt box to attach them. Streamlines license activation with key visibility toggling and automatic format validation. Adds context size and token breakdown logging for executor prompts. Refines volume control steps to 10% and adds 'get louder' and 'get quieter' voice phrases.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.4/NoManos-2.5.4.zip" length="268770139" type="application/octet-stream" sparkle:edSignature="xn09K9FFrlY0QCG7TpLQd1idW0fkHW0rCI0+92G795C1o2SH5CdWvxj7IQ9jV8fZUhUclZVY6defsV6EUbu9CQ=="/>
+        </item>
+        <item>
             <title>2.5.3</title>
             <pubDate>Wed, 04 Nov 2026 16:20:32 -0800</pubDate>
             <sparkle:version>20261105001500</sparkle:version>
@@ -23,17 +34,6 @@
             <description sparkle:format="markdown"><![CDATA[Every reply in the transcript is now spoken aloud: NoManos no longer drops its own replies based on what you said, or as near-duplicates. Other audio is lowered while you or NoManos speak, and never while the mic or voice is muted. Also fixes background jobs (kept through amendments, cancelled with their task), vague follow-up messages (the assistant's last reply is always supplied), and short replies to the assistant's questions (no longer ignored). Ignored speech is now visible in the transcript.
 ]]></description>
             <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.2/NoManos-2.5.2.zip" length="268522088" type="application/octet-stream" sparkle:edSignature="BynzpP8Jol1sEpn8zhnVngASizX/Bs5p0plwZjAV2MSmPMQFktc0o6cRxLfFiHZHnFGtOzml84qrVyBU2DBXCQ=="/>
-        </item>
-        <item>
-            <title>2.5.1</title>
-            <pubDate>Tue, 03 Nov 2026 16:03:33 -0800</pubDate>
-            <sparkle:version>20261103235855</sparkle:version>
-            <sparkle:shortVersionString>2.5.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Background jobs now always belong to a task and keep it active until they finish; shown nested under their task.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.1/NoManos-2.5.1.zip" length="268491903" type="application/octet-stream" sparkle:edSignature="n4ceja3K39gLrft2acAMGu0r/GZAnQIDYvZnIrmDBzS6N+aMTRptpGPFjrn94hFkhlNLebp7jcKqcjeqgeTEAg=="/>
         </item>
     </channel>
 </rss>
