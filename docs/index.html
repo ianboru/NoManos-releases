@@ -3,28 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NoManos — Hands-Free Voice Coding for macOS</title>
-  <meta name="description" content="Talk through your next feature or bug fix. NoManos brings voice input, spoken progress, and hands-free control to your coding agents on macOS.">
+  <title>NoManos: stop typing and talk to your coding agent</title>
+  <meta name="description" content="NoManos is a Mac app that lets you talk to your coding agent and hear back when it’s done, so you can finally get up from the chair.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,500;0,600;1,500&family=Atkinson+Hyperlegible+Next:wght@400;500;600&family=Atkinson+Hyperlegible+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,700;1,400&family=Martian+Mono:wght@400;500&display=swap">
   <style>
     :root {
-      --bg: #0b0d14;
-      --surface: #121522;
-      --surface-subtle: #171b2c;
-      --text: #f8fafc;
-      --text-muted: #94a3b8;
-      --text-dim: #94a3b8;
-      --brand: #4f45d8;
-      --brand-hover: #4338ca;
-      --brand-tint: rgba(79, 69, 216, 0.12);
-      --brand-border: rgba(99, 102, 241, 0.25);
-      --border: rgba(255, 255, 255, 0.08);
-      --border-light: rgba(255, 255, 255, 0.14);
-      --font-editorial: "Besley", "Rockwell", "Georgia", serif;
-      --font-sans: "Atkinson Hyperlegible Next", "Verdana", sans-serif;
-      --font-mono: "Atkinson Hyperlegible Mono", "Courier New", monospace;
+      /* Navy and cyan come from the app icon (scripts/make-app-icon.swift). */
+      --navy: #070b18;
+      --navy-line: #1f2a44;
+      --cyan: #3fe0f5;
+      --cyan-deep: #1fb8cc;
+      --paper: #ece6da;
+      --muted: #a3acbd;
+      --font-display: "Young Serif", "Iowan Old Style", "Georgia", serif;
+      --font-body: "Schibsted Grotesk", "Helvetica Neue", "Arial", sans-serif;
+      --font-mono: "Martian Mono", "Menlo", monospace;
     }
 
     * {
@@ -34,409 +29,281 @@
     }
 
     body {
-      background-color: var(--bg);
-      color: var(--text);
-      font-family: var(--font-sans);
-      font-size: 1.05rem;
+      background: var(--navy);
+      color: var(--paper);
+      font-family: var(--font-body);
+      font-size: 1.0625rem;
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
-      padding: 0 1.5rem;
     }
 
     ::selection {
-      background: var(--brand);
-      color: #ffffff;
-    }
-
-    .page {
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 5rem 0 6rem;
-    }
-
-    /* Header */
-    header {
-      margin-bottom: 4rem;
-    }
-
-    .brand-title {
-      font-family: var(--font-editorial);
-      font-size: clamp(2.5rem, 5vw, 3.6rem);
-      font-weight: 500;
-      letter-spacing: -0.025em;
-      line-height: 1.15;
-      color: var(--text);
-      margin-bottom: 1.25rem;
-    }
-
-    .brand-title em {
-      font-style: italic;
-      color: #c7d2fe;
-    }
-
-    .lead {
-      font-size: 1.2rem;
-      line-height: 1.65;
-      color: var(--text-muted);
-      margin-bottom: 2.25rem;
-    }
-
-    .cta-group {
-      display: flex;
-      align-items: center;
-      gap: 1.25rem;
-      flex-wrap: wrap;
-      margin-bottom: 1rem;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.85rem 1.75rem;
-      font-family: var(--font-sans);
-      font-size: 0.95rem;
-      font-weight: 600;
-      text-decoration: none;
-      border-radius: 7px;
-      transition: background-color 0.15s ease;
-      cursor: pointer;
-    }
-
-    .btn-primary {
-      background: var(--brand);
-      color: #ffffff;
-      border: 1px solid var(--brand);
-    }
-
-    .btn-primary:hover {
-      background: var(--brand-hover);
-
+      background: var(--cyan);
+      color: var(--navy);
     }
 
     a:focus-visible {
-      outline: 3px solid #c7d2fe;
+      outline: 2px solid var(--cyan);
       outline-offset: 4px;
     }
 
-    .meta-note {
-      font-size: 0.825rem;
-      color: var(--text-dim);
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .label {
       font-family: var(--font-mono);
-    }
-
-    hr.divider {
-      border: 0;
-      height: 1px;
-      background: var(--border);
-      margin: 3.5rem 0;
-    }
-
-    /* Section Headings */
-    h2.section-heading {
-      font-family: var(--font-editorial);
-      font-size: 1.75rem;
+      font-size: 0.72rem;
       font-weight: 500;
-      letter-spacing: -0.015em;
-      color: var(--text);
-      margin-bottom: 1.5rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
     }
 
-    /* Core Capabilities List */
-    .feature-list {
-      display: flex;
-      flex-direction: column;
-      gap: 1.75rem;
-    }
-
-    .feature-item {
-      display: grid;
-      grid-template-columns: 200px 1fr;
-      gap: 2rem;
-      align-items: baseline;
-    }
-
-    .feature-name {
-      font-family: var(--font-sans);
-      font-weight: 600;
-      font-size: 1rem;
-      color: var(--text);
-    }
-
-    .feature-desc {
-      color: var(--text-muted);
-      font-size: 1rem;
-      line-height: 1.65;
-    }
-
-    /* Supported CLIs */
-    .cli-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.25rem;
-      margin-top: 1rem;
-    }
-
-    .cli-box {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1.35rem 1.5rem;
-    }
-
-    .cli-box-header {
+    /* Top line */
+    .topline {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 0.5rem;
+      gap: 1.5rem;
+      text-align: right;
+      padding: 1.75rem 0;
+      border-bottom: 1px solid var(--navy-line);
     }
 
-    .cli-box-name {
-      font-weight: 600;
-      font-size: 1.05rem;
-      color: var(--text);
+    .wordmark {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      color: var(--paper);
+      text-decoration: none;
     }
 
-    .cli-box-cmd {
-      font-family: var(--font-mono);
-      font-size: 0.775rem;
-      color: #a5b4fc;
-      background: var(--brand-tint);
-      padding: 0.15rem 0.45rem;
-      border-radius: 4px;
+    /* Opening */
+    .opening {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 4rem;
+      align-items: end;
+      padding: 6rem 0;
     }
 
-    .cli-box-desc {
+    h1 {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: clamp(2.8rem, 6.5vw, 5rem);
+      line-height: 1.02;
+      letter-spacing: -0.01em;
+    }
+
+    h1 .said {
+      display: block;
+      color: var(--cyan);
+    }
+
+    .intro {
+      font-size: 1.2rem;
+      color: var(--muted);
+      margin-bottom: 2.25rem;
+    }
+
+    .intro strong {
+      color: var(--paper);
+      font-weight: 500;
+    }
+
+    .download {
+      display: inline-block;
+      background: var(--cyan);
+      color: var(--navy);
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      padding: 0.9rem 1.6rem;
+      border-radius: 3px;
+      box-shadow: 4px 4px 0 var(--cyan-deep);
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+
+    .download:hover {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0 var(--cyan-deep);
+    }
+
+    .fineprint {
+      margin-top: 1.25rem;
       font-size: 0.9rem;
-      color: var(--text-muted);
+      color: var(--muted);
+    }
+
+    /* Sections: a side heading and a column of prose */
+    section {
+      border-top: 1px solid var(--navy-line);
+      padding: 4.5rem 0;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 15rem 1fr;
+      gap: 3rem;
+    }
+
+    .split > header {
+      position: sticky;
+      top: 2rem;
+      align-self: start;
+    }
+
+    h2 {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: 1.9rem;
+      line-height: 1.15;
+      margin-top: 0.75rem;
+    }
+
+    .prose {
+      max-width: 40rem;
+    }
+
+    .prose p {
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .prose p + p {
+      margin-top: 1.25rem;
+    }
+
+    .prose p:first-child {
+      color: var(--paper);
+      font-size: 1.3rem;
       line-height: 1.55;
     }
 
-    .cli-footnote {
-      margin-top: 1rem;
-      font-size: 0.85rem;
-      color: var(--text-dim);
-    }
-
-    /* Pricing / Terms */
-    .terms-box {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 2rem 2.25rem;
-      margin-top: 1rem;
-    }
-
-    .terms-summary {
-      font-size: 1.15rem;
-      font-weight: 500;
-      color: var(--text);
-      margin-bottom: 1rem;
-    }
-
-    .terms-bullets {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      margin-bottom: 2rem;
-    }
-
-    .terms-bullets li {
-      display: flex;
-      align-items: baseline;
-      gap: 0.75rem;
-      color: var(--text-muted);
+    .prose .small {
       font-size: 0.95rem;
     }
 
-    .terms-bullets li::before {
-      content: "—";
-      color: #a5b4fc;
-      font-family: var(--font-mono);
+    /* Closing */
+    .closing {
+      padding: 6rem 0 5rem;
     }
 
-    .terms-action {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
+    .closing h2 {
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      max-width: 40rem;
+      margin: 0 0 2.25rem;
     }
 
-    /* Footer */
+    .closing h2 span {
+      color: var(--cyan);
+    }
+
     footer {
-      margin-top: 4rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid var(--navy-line);
+      padding: 2rem 0 3rem;
       display: flex;
       justify-content: space-between;
-      align-items: center;
       flex-wrap: wrap;
       gap: 1rem;
-      font-size: 0.825rem;
-      color: var(--text-dim);
+      color: var(--muted);
+      font-size: 0.9rem;
     }
 
-    @media (max-width: 640px) {
-      .page { padding: 3rem 0 4rem; }
-      .feature-item { grid-template-columns: 1fr; gap: 0.35rem; }
-      .cli-grid { grid-template-columns: 1fr; }
-      .terms-box { padding: 1.5rem; }
+    @media (max-width: 860px) {
+      .opening { grid-template-columns: 1fr; gap: 2.5rem; padding: 3.5rem 0 4rem; }
+      .split { grid-template-columns: 1fr; gap: 1.5rem; }
+      .split > header { position: static; }
+      .closing { padding: 4rem 0 3.5rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .download { transition: none; }
+      .download:hover { transform: none; }
     }
   </style>
 </head>
 <body>
 
-  <main class="page">
+  <div class="wrap">
+    <div class="topline">
+      <a class="wordmark" href="#">NoManos</a>
+      <span class="label">Voice for your coding agent</span>
+    </div>
 
-    <!-- Header -->
-    <header>
-      <h1 class="brand-title">NoManos &mdash; <em>Talk through your next feature.</em></h1>
-      <p class="lead">
-        Describe a bug. Explain an idea. Ask for a change. NoManos is a Mac app that lets you work with your coding agent by voice and hear how it’s going, so you can spend less time typing prompts and watching a terminal.
-      </p>
-
-      <div class="cta-group">
-        <a href="https://github.com/ianboru/NoManos-releases/releases" class="btn btn-primary">
-          Download for macOS
-        </a>
-        <span class="meta-note">7-day free trial &bull; macOS 14.2+ &bull; Apple Silicon &amp; Intel</span>
-      </div>
-    </header>
-
-    <hr class="divider">
-
-    <!-- Keep the conversation going & Core Capabilities -->
-    <section>
-      <h2 class="section-heading">Keep the conversation going</h2>
-      <div class="feature-list">
-        <div class="feature-item">
-          <div class="feature-name">Say what you want to build</div>
-          <div class="feature-desc">
-            Explain the work in your own words. NoManos passes your request to your coding agent and reads back progress and results, so you can follow along without reading every line of output.
-          </div>
-        </div>
-
-        <div class="feature-item">
-          <div class="feature-name">Change direction out loud</div>
-          <div class="feature-desc">
-            Forgot a detail? Changed your mind? Speak to add context, or ask the agent to stop and take a different approach. You don’t have to wait for the conversation to end.
-          </div>
-        </div>
-
-        <div class="feature-item">
-          <div class="feature-name">Give permission by voice</div>
-          <div class="feature-desc">
-            With Claude Code, hear tool approval requests and answer “allow” or “deny” out loud. Other supported agents can ask whether to retry a blocked action; approval behavior depends on the agent and its settings.
-          </div>
-        </div>
-
-        <div class="feature-item">
-          <div class="feature-name">Keep your music on</div>
-          <div class="feature-desc">
-            Your music lowers while you or NoManos speak, then returns to its usual volume. Keep listening without reaching for the volume control.
-          </div>
-        </div>
-
-        <div class="feature-item">
-          <div class="feature-name">Local speech, your choice</div>
-          <div class="feature-desc">
-            The default speech recognition and voice run on your Mac. Your coding agent still sends prompts and relevant code to its provider. Optional cloud voices send text to the voice service you choose.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider">
-
-    <!-- Supported Coding CLIs -->
-    <section>
-      <h2 class="section-heading">Use the coding agents you know</h2>
-      <p style="color: var(--text-muted); margin-bottom: 1.25rem;">
-        Work in your own projects with Claude Code, Codex, Antigravity, or OpenCode. NoManos adds a voice interface to the coding tools you already use.
-      </p>
-
-      <div class="cli-grid">
-        <div class="cli-box">
-          <div class="cli-box-header">
-            <span class="cli-box-name">Claude Code</span>
-            <span class="cli-box-cmd">claude</span>
-          </div>
-          <p class="cli-box-desc">
-            Add instructions during a running turn and answer live tool approvals by voice.
-          </p>
-        </div>
-
-        <div class="cli-box">
-          <div class="cli-box-header">
-            <span class="cli-box-name">Antigravity</span>
-            <span class="cli-box-cmd">agy</span>
-          </div>
-          <p class="cli-box-desc">
-            Talk through tasks in your project and hear progress as the agent works.
-          </p>
-        </div>
-
-        <div class="cli-box">
-          <div class="cli-box-header">
-            <span class="cli-box-name">Codex CLI</span>
-            <span class="cli-box-cmd">codex</span>
-          </div>
-          <p class="cli-box-desc">
-            Give coding tasks by voice and hear the results from your Codex sessions.
-          </p>
-        </div>
-
-        <div class="cli-box">
-          <div class="cli-box-header">
-            <span class="cli-box-name">OpenCode</span>
-            <span class="cli-box-cmd">opencode</span>
-          </div>
-          <p class="cli-box-desc">
-            Use your configured OpenCode models with spoken requests and responses.
-          </p>
-        </div>
-      </div>
-
-      <p class="cli-footnote">
-        Requires installed, signed-in command-line tools. Claude Code is also required for NoManos’s voice orchestration, even when another agent does the coding. Agent subscriptions and usage are separate.
-      </p>
-    </section>
-
-    <hr class="divider">
-
-    <!-- Pricing & Licensing -->
-    <section>
-      <h2 class="section-heading">Try it on your next project</h2>
-      <div class="terms-box">
-        <div class="terms-summary">Seven days to try it. One purchase to keep it.</div>
-        <ul class="terms-bullets">
-          <li><span><strong>7-day free trial.</strong> Starts when you first launch the app.</span></li>
-          <li><span><strong>One-time purchase.</strong> Buy in the app to keep using NoManos. No recurring app fee.</span></li>
-          <li><span><strong>Up to 5 Macs.</strong> One personal license covers your registered devices.</span></li>
-          <li><span><strong>Online activation.</strong> Your license stays valid offline for up to 30 days between checks. Cloud coding agents still need internet access.</span></li>
-        </ul>
-
-        <div class="terms-action">
-          <a href="https://github.com/ianboru/NoManos-releases/releases" class="btn btn-primary">
-            Download NoManos
-          </a>
-          <span class="meta-note">macOS 14.2+ &bull; Apple Silicon &amp; Intel</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
+    <div class="opening">
+      <h1>Why are you still typing? <span class="said">Just Talk.</span></h1>
       <div>
-        <strong>NoManos</strong> &bull; Native Swift for macOS
+        <p class="intro">
+          You’ve been hunched over the keyboard since morning, watching a terminal scroll and waiting on your coding agent while your shoulders creep up toward your ears. <strong>NoManos lets you talk to the agent instead, and it talks back with plans and status updates.</strong>
+        </p>
+        <a class="download" href="https://github.com/ianboru/NoManos-releases/releases">Download NoManos</a>
       </div>
-      <div>
-        Voice input. Spoken progress. Your projects.
+    </div>
+  </div>
+
+  <main class="wrap">
+
+    <section class="split" aria-labelledby="feel">
+      <header>
+        <span class="label">How it feels</span>
+        <h2 id="feel">Get up from the chair</h2>
+      </header>
+      <div class="prose">
+        <p>Remember when coding didn’t mean being glued to a desk? Stand by the window or go make some lunch. NoManos keeps listening, so when the fix comes to you, you can say it from across the room and your agent starts working on it.</p>
+        <p>When the work is finished you hear a short summary of what changed, which beats squinting through pages of output. And if you remember a detail halfway through, just mention it. The agent picks it up without waiting for its turn to end, and you can tell it to stop whenever it heads somewhere you didn’t mean.</p>
+        <p>When your agent wants permission to run something, NoManos asks you out loud and waits for your answer. Your music can keep playing too, because it dips while either of you is talking and comes back up afterwards.</p>
+        <p class="small">Lowering other apps’ audio needs macOS 14.2 and permission to record system audio.</p>
       </div>
-    </footer>
+    </section>
+
+    <section class="split" aria-labelledby="agent">
+      <header>
+        <span class="label">Your agent</span>
+        <h2 id="agent">Keep the agent you already trust</h2>
+      </header>
+      <div class="prose">
+        <p>There’s nothing new to learn. NoManos works with several coding agent harnesses and passes your words straight to whichever one you already use.</p>
+        <p>It supports Antigravity, Claude Code, Codex and OpenCode, once they’re installed and logged in. If you already use a coding agent harness, you don’t need any extra software, and whatever you pay for your agent today stays between you and its provider.</p>
+      </div>
+    </section>
+
+    <section class="split" aria-labelledby="voice">
+      <header>
+        <span class="label">Voice</span>
+        <h2 id="voice">Your voice stays on your Mac</h2>
+      </header>
+      <div class="prose">
+        <p>The listening happens on your Mac. Speech recognition and the default voice run locally, while your agent sends prompts and code to its provider the way it always has. If you pick a cloud voice instead, the text it reads aloud goes to that service.</p>
+      </div>
+    </section>
+
+    <section class="split" aria-labelledby="price">
+      <header>
+        <span class="label">Price</span>
+        <h2 id="price">Try it for a week</h2>
+      </header>
+      <div class="prose">
+        <p>Your seven days start the first time you open NoManos. If you want to keep it after that, you pay once from inside the app and never see a subscription.</p>
+        <p>A single license covers up to five of your Macs. It activates online and then keeps working offline for as long as 30 days between checks, although an agent that runs in the cloud will still need the internet.</p>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="close">
+      <h2 id="close">Your hands have done enough today. <span>Let your voice take it from here.</span></h2>
+      <a class="download" href="https://github.com/ianboru/NoManos-releases/releases">Download NoManos</a>
+    </section>
 
   </main>
+
+  <div class="wrap">
+    <footer>
+      <span>NoManos is a native Mac app written in Swift.</span>
+      <span>“No manos” is Spanish for “no hands”.</span>
+    </footer>
+  </div>
 
 </body>
 </html>
