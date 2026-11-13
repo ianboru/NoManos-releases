@@ -5,6 +5,17 @@
         <item>
             <title>2.5.5</title>
             <pubDate>Thu, 12 Nov 2026 18:10:48 -0800</pubDate>
+            <sparkle:version>20261113051724</sparkle:version>
+            <sparkle:shortVersionString>2.5.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Project creation by voice, executor progress updates, refreshed app icon, classified spoken receipts, louder voice, and usage tracking improvements.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.5/NoManos-2.5.5.zip" length="269775726" type="application/octet-stream" sparkle:edSignature="tDS8f9FpifLtfpOFPdb+ANYNdyh0GYb+ew69m9HYD71evnoN0yHvargyYZHKfGS9Ijw1t8mHmpHD8avyS/sDBw=="/>
+        </item>
+        <item>
+            <title>2.5.5</title>
+            <pubDate>Thu, 12 Nov 2026 18:10:48 -0800</pubDate>
             <sparkle:version>20261113020602</sparkle:version>
             <sparkle:shortVersionString>2.5.5</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
@@ -23,17 +34,6 @@
             <description sparkle:format="markdown"><![CDATA[Fixes Node.js CLI launching by prioritizing local Node paths and clearly explaining missing or outdated Node runtimes. Allows dropping images directly into the prompt box to attach them. Streamlines license activation with key visibility toggling and automatic format validation. Adds context size and token breakdown logging for executor prompts. Refines volume control steps to 10% and adds 'get louder' and 'get quieter' voice phrases.
 ]]></description>
             <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.4/NoManos-2.5.4.zip" length="268770139" type="application/octet-stream" sparkle:edSignature="xn09K9FFrlY0QCG7TpLQd1idW0fkHW0rCI0+92G795C1o2SH5CdWvxj7IQ9jV8fZUhUclZVY6defsV6EUbu9CQ=="/>
-        </item>
-        <item>
-            <title>2.5.3</title>
-            <pubDate>Wed, 04 Nov 2026 16:20:32 -0800</pubDate>
-            <sparkle:version>20261105001500</sparkle:version>
-            <sparkle:shortVersionString>2.5.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Smoother transcript scrolling: the transcript no longer re-filters every project's chat on each update, rows don't redraw on every status change, and pages are laid out once so dragging doesn't stutter. Adds transcript pagination with page size and time-range controls. Recovers from model tool-formatting errors by retrying the turn once. Understands more ways to say start or stop listening.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.3/NoManos-2.5.3.zip" length="268623474" type="application/octet-stream" sparkle:edSignature="02HGjaPusIFTx65QD0mMnPkoEtgsR/l/8x+1dvE9xKpqwUzjd0SQMHBwebua4ab11e8wC8TvWKNW1ejzsirMDQ=="/>
         </item>
     </channel>
 </rss>
