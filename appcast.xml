@@ -3,6 +3,17 @@
     <channel>
         <title>NoManos</title>
         <item>
+            <title>2.5.6</title>
+            <pubDate>Sat, 14 Nov 2026 00:12:25 -0800</pubDate>
+            <sparkle:version>20261114080641</sparkle:version>
+            <sparkle:shortVersionString>2.5.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Task list timestamps now show local hours and minutes first, followed by a short numeric date. Task duration remains visible.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.6/NoManos-2.5.6.zip" length="271598226" type="application/octet-stream" sparkle:edSignature="wCyyhKyiizqOel6WYGojtT64kPSYosyDrod8CvLIgbuzL0NbJvbuxP7I1OnM8l6mAuJirMK86b4KDqsMwXoUAA=="/>
+        </item>
+        <item>
             <title>2.5.5</title>
             <pubDate>Thu, 12 Nov 2026 18:10:48 -0800</pubDate>
             <sparkle:version>20261113051724</sparkle:version>
@@ -23,17 +34,6 @@
             <description sparkle:format="markdown"><![CDATA[Project creation by voice, executor progress updates, refreshed app icon, audio ducking and usage tracking improvements.
 ]]></description>
             <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.5/NoManos-2.5.5.zip" length="269763731" type="application/octet-stream" sparkle:edSignature="HEEz2eM97FusYPTYB5m9sNAXc5ce5QG1Mz5MpTLFKTPMx7I5gkn6fHDBKwgMaEWB4i6ETH+fajGscAB47VnBAw=="/>
-        </item>
-        <item>
-            <title>2.5.4</title>
-            <pubDate>Wed, 11 Nov 2026 19:32:06 -0800</pubDate>
-            <sparkle:version>20261112032710</sparkle:version>
-            <sparkle:shortVersionString>2.5.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Fixes Node.js CLI launching by prioritizing local Node paths and clearly explaining missing or outdated Node runtimes. Allows dropping images directly into the prompt box to attach them. Streamlines license activation with key visibility toggling and automatic format validation. Adds context size and token breakdown logging for executor prompts. Refines volume control steps to 10% and adds 'get louder' and 'get quieter' voice phrases.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.4/NoManos-2.5.4.zip" length="268770139" type="application/octet-stream" sparkle:edSignature="xn09K9FFrlY0QCG7TpLQd1idW0fkHW0rCI0+92G795C1o2SH5CdWvxj7IQ9jV8fZUhUclZVY6defsV6EUbu9CQ=="/>
         </item>
     </channel>
 </rss>
