@@ -3,6 +3,24 @@
     <channel>
         <title>NoManos</title>
         <item>
+            <title>2.6.0</title>
+            <pubDate>Sat, 14 Nov 2026 15:45:35 -0800</pubDate>
+            <sparkle:version>20261114234004</sparkle:version>
+            <sparkle:shortVersionString>2.6.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[NoManos 2.6.0
+
+- Combine unfinished spoken input in order and wait for speech and transcription before acting.
+- Improve echo cancellation recovery, audio playback stability, and headphone diagnostics.
+- Expand voice commands for detail level, silence, and restoring speech.
+- Start fresh executor sessions when switching task topics.
+- Correct per-turn cost accounting, rolling quota percentages, shared model limit pools, and usage history recovery.
+- Display task timestamps with AM/PM and refresh the website demo and workflow documentation.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.0/NoManos-2.6.0.zip" length="271673143" type="application/octet-stream" sparkle:edSignature="ihd4IZQoK0kr6B5Nx3WBoO/DmFumWuRK+QbkfNvSM0IUiRNFCBsKs/0Pur8wzjGxcKjGVObK7e6LLOhyAg5rAg=="/>
+        </item>
+        <item>
             <title>2.5.6</title>
             <pubDate>Sat, 14 Nov 2026 00:12:25 -0800</pubDate>
             <sparkle:version>20261114080641</sparkle:version>
@@ -23,17 +41,6 @@
             <description sparkle:format="markdown"><![CDATA[Project creation by voice, executor progress updates, refreshed app icon, classified spoken receipts, louder voice, and usage tracking improvements.
 ]]></description>
             <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.5/NoManos-2.5.5.zip" length="269775726" type="application/octet-stream" sparkle:edSignature="tDS8f9FpifLtfpOFPdb+ANYNdyh0GYb+ew69m9HYD71evnoN0yHvargyYZHKfGS9Ijw1t8mHmpHD8avyS/sDBw=="/>
-        </item>
-        <item>
-            <title>2.5.5</title>
-            <pubDate>Thu, 12 Nov 2026 18:10:48 -0800</pubDate>
-            <sparkle:version>20261113020602</sparkle:version>
-            <sparkle:shortVersionString>2.5.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Project creation by voice, executor progress updates, refreshed app icon, audio ducking and usage tracking improvements.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.5/NoManos-2.5.5.zip" length="269763731" type="application/octet-stream" sparkle:edSignature="HEEz2eM97FusYPTYB5m9sNAXc5ce5QG1Mz5MpTLFKTPMx7I5gkn6fHDBKwgMaEWB4i6ETH+fajGscAB47VnBAw=="/>
         </item>
     </channel>
 </rss>
