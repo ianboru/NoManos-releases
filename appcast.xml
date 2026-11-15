@@ -3,6 +3,22 @@
     <channel>
         <title>NoManos</title>
         <item>
+            <title>2.6.1</title>
+            <pubDate>Sun, 15 Nov 2026 14:53:51 -0800</pubDate>
+            <sparkle:version>20261115224756</sparkle:version>
+            <sparkle:shortVersionString>2.6.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[NoManos 2.6.1
+
+- Audio now recovers automatically after sleep/wake, microphone or headphone changes, and CoreAudio restarts, with retries if the mic fails to start.
+- Typed prompts are handled immediately: they cancel in-progress voice detection and skip wake-word and relevance checks.
+- Muting cleanly stops NoManos's voice; text is formatted better before speaking.
+- The status shows a "Thinking…" indicator while the agent works.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.1/NoManos-2.6.1.zip" length="271665208" type="application/octet-stream" sparkle:edSignature="DMtizX7Uc6gdOaz6e3RUOtozB9M8n8bgPlgiR4Hlh/+Ii0d/ABAcSUi00BPN3cT5prNTEHQZ/WTNP/7h6d5eCw=="/>
+        </item>
+        <item>
             <title>2.6.0</title>
             <pubDate>Sat, 14 Nov 2026 15:45:35 -0800</pubDate>
             <sparkle:version>20261114234004</sparkle:version>
@@ -30,17 +46,6 @@
             <description sparkle:format="markdown"><![CDATA[Task list timestamps now show local hours and minutes first, followed by a short numeric date. Task duration remains visible.
 ]]></description>
             <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.6/NoManos-2.5.6.zip" length="271598226" type="application/octet-stream" sparkle:edSignature="wCyyhKyiizqOel6WYGojtT64kPSYosyDrod8CvLIgbuzL0NbJvbuxP7I1OnM8l6mAuJirMK86b4KDqsMwXoUAA=="/>
-        </item>
-        <item>
-            <title>2.5.5</title>
-            <pubDate>Thu, 12 Nov 2026 18:10:48 -0800</pubDate>
-            <sparkle:version>20261113051724</sparkle:version>
-            <sparkle:shortVersionString>2.5.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Project creation by voice, executor progress updates, refreshed app icon, classified spoken receipts, louder voice, and usage tracking improvements.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.5/NoManos-2.5.5.zip" length="269775726" type="application/octet-stream" sparkle:edSignature="tDS8f9FpifLtfpOFPdb+ANYNdyh0GYb+ew69m9HYD71evnoN0yHvargyYZHKfGS9Ijw1t8mHmpHD8avyS/sDBw=="/>
         </item>
     </channel>
 </rss>
