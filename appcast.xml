@@ -3,6 +3,23 @@
     <channel>
         <title>NoManos</title>
         <item>
+            <title>2.6.2</title>
+            <pubDate>Mon, 16 Nov 2026 15:21:52 -0800</pubDate>
+            <sparkle:version>20261116231609</sparkle:version>
+            <sparkle:shortVersionString>2.6.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[NoManos 2.6.2
+
+- Audio capture health monitoring with automatic recovery across sleep/wake and device transitions.
+- Task handoff and auto-restart support when usage or rate limits are encountered.
+- Task history persistence and cross-project session recovery.
+- Response detail view with Markdown table parsing and rendering in transcripts.
+- Improved handling and formatting for dropped speech and muted notices.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.2/NoManos-2.6.2.zip" length="271862167" type="application/octet-stream" sparkle:edSignature="7T6wE05CpVnLe/R9QsQCrBaXYxCZ2ByMe+fmhQ6Qw7ifNh4dPsRv4cFxXoyNI23C+mHVRHjoXaezJJrD215bAw=="/>
+        </item>
+        <item>
             <title>2.6.1</title>
             <pubDate>Sun, 15 Nov 2026 14:53:51 -0800</pubDate>
             <sparkle:version>20261115224756</sparkle:version>
@@ -35,17 +52,6 @@
 - Display task timestamps with AM/PM and refresh the website demo and workflow documentation.
 ]]></description>
             <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.0/NoManos-2.6.0.zip" length="271673143" type="application/octet-stream" sparkle:edSignature="ihd4IZQoK0kr6B5Nx3WBoO/DmFumWuRK+QbkfNvSM0IUiRNFCBsKs/0Pur8wzjGxcKjGVObK7e6LLOhyAg5rAg=="/>
-        </item>
-        <item>
-            <title>2.5.6</title>
-            <pubDate>Sat, 14 Nov 2026 00:12:25 -0800</pubDate>
-            <sparkle:version>20261114080641</sparkle:version>
-            <sparkle:shortVersionString>2.5.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Task list timestamps now show local hours and minutes first, followed by a short numeric date. Task duration remains visible.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.5.6/NoManos-2.5.6.zip" length="271598226" type="application/octet-stream" sparkle:edSignature="wCyyhKyiizqOel6WYGojtT64kPSYosyDrod8CvLIgbuzL0NbJvbuxP7I1OnM8l6mAuJirMK86b4KDqsMwXoUAA=="/>
         </item>
     </channel>
 </rss>
