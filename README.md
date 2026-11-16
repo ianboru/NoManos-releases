@@ -6,7 +6,7 @@ this repository holds only what installed apps need to update themselves with
 
 | What | Where |
 | --- | --- |
-| Marketing page (GitHub Pages, `docs/`) | [ianboru.github.io/NoManos-releases](https://ianboru.github.io/NoManos-releases/) |
+| Marketing page (GitHub Pages) | [ianboru.github.io/NoManos](https://ianboru.github.io/NoManos/) (hosted on `ianboru/NoManos`) |
 | Update feed (`SUFeedURL`) | `https://raw.githubusercontent.com/ianboru/NoManos-releases/main/appcast.xml` |
 | Release archives | `https://github.com/ianboru/NoManos-releases/releases/download/v<version>/NoManos-<version>.zip` |
 
@@ -14,7 +14,7 @@ this repository holds only what installed apps need to update themselves with
 
 - `appcast.xml`: the Sparkle feed. Each item names a version, its build number, the archive URL,
   its size, and an EdDSA signature that installed apps check against the `SUPublicEDKey` bundled in NoManos.
-- `docs/index.html`: the NoManos marketing page, served by GitHub Pages from `main` `/docs`.
+- `docs/index.html`: redirects to the NoManos marketing page hosted on `ianboru/NoManos` ([ianboru.github.io/NoManos](https://ianboru.github.io/NoManos/)).
 - GitHub Releases `v<version>`: one notarized `NoManos-<version>.zip` per release.
 
 ## Publishing
