@@ -3,6 +3,17 @@
     <channel>
         <title>NoManos</title>
         <item>
+            <title>2.6.3</title>
+            <pubDate>Mon, 16 Nov 2026 22:47:39 -0800</pubDate>
+            <sparkle:version>20261117064129</sparkle:version>
+            <sparkle:shortVersionString>2.6.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[In-app Send Feedback (toolbar, Help menu, Settings). Audio now restarts in place after sleep instead of rebuilding every time, backs off repeated rebuilds, and replays speech interrupted by sleep or an audio engine rebuild.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.3/NoManos-2.6.3.zip" length="271918728" type="application/octet-stream" sparkle:edSignature="RuHRMV/JD7FIMZ/c5uxCiTzouBvj6ZESWsLAw+pUL9J5pFuhxLLvWDlkJ25jjc2Q1K4YOoVI5S43kK9kc/75Cg=="/>
+        </item>
+        <item>
             <title>2.6.2</title>
             <pubDate>Mon, 16 Nov 2026 15:21:52 -0800</pubDate>
             <sparkle:version>20261116231609</sparkle:version>
@@ -34,24 +45,6 @@
 - The status shows a "Thinking…" indicator while the agent works.
 ]]></description>
             <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.1/NoManos-2.6.1.zip" length="271665208" type="application/octet-stream" sparkle:edSignature="DMtizX7Uc6gdOaz6e3RUOtozB9M8n8bgPlgiR4Hlh/+Ii0d/ABAcSUi00BPN3cT5prNTEHQZ/WTNP/7h6d5eCw=="/>
-        </item>
-        <item>
-            <title>2.6.0</title>
-            <pubDate>Sat, 14 Nov 2026 15:45:35 -0800</pubDate>
-            <sparkle:version>20261114234004</sparkle:version>
-            <sparkle:shortVersionString>2.6.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[NoManos 2.6.0
-
-- Combine unfinished spoken input in order and wait for speech and transcription before acting.
-- Improve echo cancellation recovery, audio playback stability, and headphone diagnostics.
-- Expand voice commands for detail level, silence, and restoring speech.
-- Start fresh executor sessions when switching task topics.
-- Correct per-turn cost accounting, rolling quota percentages, shared model limit pools, and usage history recovery.
-- Display task timestamps with AM/PM and refresh the website demo and workflow documentation.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.0/NoManos-2.6.0.zip" length="271673143" type="application/octet-stream" sparkle:edSignature="ihd4IZQoK0kr6B5Nx3WBoO/DmFumWuRK+QbkfNvSM0IUiRNFCBsKs/0Pur8wzjGxcKjGVObK7e6LLOhyAg5rAg=="/>
         </item>
     </channel>
 </rss>
