@@ -5,6 +5,24 @@
         <item>
             <title>2.6.4</title>
             <pubDate>Tue, 17 Nov 2026 22:18:03 -0800</pubDate>
+            <sparkle:version>20261119083604</sparkle:version>
+            <sparkle:shortVersionString>2.6.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[NoManos 2.6.4
+
+- Task title formatting: combined topic and request details with semibold styling in task lists.
+- Task diff view: inspect file diffs across tasks with prompt lineage and request links.
+- Usage-limit recovery: automatic recovery and resumption for tasks stopped by usage limits.
+- Speech recognition recovery: deadline monitoring and reliable recovery after recognition stalls.
+- Stop button isolation: stopping a transcript prompt or thinking generation no longer cancels running background tasks.
+- Device volume policy: coordinated volume handling and improved voice processing demand control.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.4/NoManos-2.6.4.zip" length="272336685" type="application/octet-stream" sparkle:edSignature="9UNtJo2wZwoMPEA+pR0ObKRVotXwgwXYyIVfYYCzH6soezbBc0joUCTI/JBTyorASpX7Dv4mowDvr8o+4izRAw=="/>
+        </item>
+        <item>
+            <title>2.6.4</title>
+            <pubDate>Tue, 17 Nov 2026 22:18:03 -0800</pubDate>
             <sparkle:version>20261119000544</sparkle:version>
             <sparkle:shortVersionString>2.6.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
@@ -29,17 +47,6 @@
             <description sparkle:format="markdown"><![CDATA[Task diffs view, automatic recovery of tasks stopped by usage limits, and more reliable speech recognition recovery.
 ]]></description>
             <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.4/NoManos-2.6.4.zip" length="272256257" type="application/octet-stream" sparkle:edSignature="cmaOTWh/KkL+MriqP/EZ5xARHnVRqla53oPG+LtLDJx81JoThYZxK3lZUwbxYskGwNoHPOnEnIvl8xX8FMWWDg=="/>
-        </item>
-        <item>
-            <title>2.6.3</title>
-            <pubDate>Mon, 16 Nov 2026 22:47:39 -0800</pubDate>
-            <sparkle:version>20261117064129</sparkle:version>
-            <sparkle:shortVersionString>2.6.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[In-app Send Feedback (toolbar, Help menu, Settings). Audio now restarts in place after sleep instead of rebuilding every time, backs off repeated rebuilds, and replays speech interrupted by sleep or an audio engine rebuild.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.3/NoManos-2.6.3.zip" length="271918728" type="application/octet-stream" sparkle:edSignature="RuHRMV/JD7FIMZ/c5uxCiTzouBvj6ZESWsLAw+pUL9J5pFuhxLLvWDlkJ25jjc2Q1K4YOoVI5S43kK9kc/75Cg=="/>
         </item>
     </channel>
 </rss>
