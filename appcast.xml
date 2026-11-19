@@ -3,6 +3,23 @@
     <channel>
         <title>NoManos</title>
         <item>
+            <title>2.6.5</title>
+            <pubDate>Thu, 19 Nov 2026 15:24:04 -0800</pubDate>
+            <sparkle:version>20261119231753</sparkle:version>
+            <sparkle:shortVersionString>2.6.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[NoManos 2.6.5
+
+- Voice routing & relevance: preserve requests alongside listening and detail commands, and incorporate recent conversation context in relevance decisions.
+- Task tracking: retain useful task titles through retries and maintain task prompt lineage.
+- Usage recovery & progress: use the active harness for recovery and monitor background progress with silence watchdog warnings.
+- Model discovery: cached model discovery, updated quota mappings, and expanded model limit pool.
+- Relaunch workflow: verified relaunch script and workflow.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.5/NoManos-2.6.5.zip" length="272414268" type="application/octet-stream" sparkle:edSignature="weF6gXUj375NnyvvqA5bQZTWFZ0R+RDuD9rkg1EfaVe3NiHs++voonSdcSaj5aJVfWgJvGJfg/MMWMgrxhiwAw=="/>
+        </item>
+        <item>
             <title>2.6.4</title>
             <pubDate>Tue, 17 Nov 2026 22:18:03 -0800</pubDate>
             <sparkle:version>20261119083604</sparkle:version>
@@ -36,17 +53,6 @@
 - Device volume policy: coordinated volume handling and improved voice processing demand control.
 ]]></description>
             <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.4/NoManos-2.6.4.zip" length="272305212" type="application/octet-stream" sparkle:edSignature="8lamTcjZD743CDck0aSYvrpYP54VJrCjbDC7oALveAGaHj8tBXKSgmkL3uiuqF51zddh7CLIFrxs2dv8guZ1Ag=="/>
-        </item>
-        <item>
-            <title>2.6.4</title>
-            <pubDate>Tue, 17 Nov 2026 22:18:03 -0800</pubDate>
-            <sparkle:version>20261118061233</sparkle:version>
-            <sparkle:shortVersionString>2.6.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Task diffs view, automatic recovery of tasks stopped by usage limits, and more reliable speech recognition recovery.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.4/NoManos-2.6.4.zip" length="272256257" type="application/octet-stream" sparkle:edSignature="cmaOTWh/KkL+MriqP/EZ5xARHnVRqla53oPG+LtLDJx81JoThYZxK3lZUwbxYskGwNoHPOnEnIvl8xX8FMWWDg=="/>
         </item>
     </channel>
 </rss>
