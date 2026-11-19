@@ -3,6 +3,34 @@
     <channel>
         <title>NoManos</title>
         <item>
+            <title>2.6.4</title>
+            <pubDate>Tue, 17 Nov 2026 22:18:03 -0800</pubDate>
+            <sparkle:version>20261119000544</sparkle:version>
+            <sparkle:shortVersionString>2.6.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[NoManos 2.6.4
+
+- Task diff view: inspect file diffs across tasks with prompt lineage and request links.
+- Usage-limit recovery: automatic recovery and resumption for tasks stopped by usage limits.
+- Speech recognition recovery: deadline monitoring and reliable recovery after recognition stalls.
+- Stop button isolation: stopping a transcript prompt or thinking generation no longer cancels running background tasks.
+- Device volume policy: coordinated volume handling and improved voice processing demand control.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.4/NoManos-2.6.4.zip" length="272305212" type="application/octet-stream" sparkle:edSignature="8lamTcjZD743CDck0aSYvrpYP54VJrCjbDC7oALveAGaHj8tBXKSgmkL3uiuqF51zddh7CLIFrxs2dv8guZ1Ag=="/>
+        </item>
+        <item>
+            <title>2.6.4</title>
+            <pubDate>Tue, 17 Nov 2026 22:18:03 -0800</pubDate>
+            <sparkle:version>20261118061233</sparkle:version>
+            <sparkle:shortVersionString>2.6.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Task diffs view, automatic recovery of tasks stopped by usage limits, and more reliable speech recognition recovery.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.4/NoManos-2.6.4.zip" length="272256257" type="application/octet-stream" sparkle:edSignature="cmaOTWh/KkL+MriqP/EZ5xARHnVRqla53oPG+LtLDJx81JoThYZxK3lZUwbxYskGwNoHPOnEnIvl8xX8FMWWDg=="/>
+        </item>
+        <item>
             <title>2.6.3</title>
             <pubDate>Mon, 16 Nov 2026 22:47:39 -0800</pubDate>
             <sparkle:version>20261117064129</sparkle:version>
@@ -12,39 +40,6 @@
             <description sparkle:format="markdown"><![CDATA[In-app Send Feedback (toolbar, Help menu, Settings). Audio now restarts in place after sleep instead of rebuilding every time, backs off repeated rebuilds, and replays speech interrupted by sleep or an audio engine rebuild.
 ]]></description>
             <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.3/NoManos-2.6.3.zip" length="271918728" type="application/octet-stream" sparkle:edSignature="RuHRMV/JD7FIMZ/c5uxCiTzouBvj6ZESWsLAw+pUL9J5pFuhxLLvWDlkJ25jjc2Q1K4YOoVI5S43kK9kc/75Cg=="/>
-        </item>
-        <item>
-            <title>2.6.2</title>
-            <pubDate>Mon, 16 Nov 2026 15:21:52 -0800</pubDate>
-            <sparkle:version>20261116231609</sparkle:version>
-            <sparkle:shortVersionString>2.6.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[NoManos 2.6.2
-
-- Audio capture health monitoring with automatic recovery across sleep/wake and device transitions.
-- Task handoff and auto-restart support when usage or rate limits are encountered.
-- Task history persistence and cross-project session recovery.
-- Response detail view with Markdown table parsing and rendering in transcripts.
-- Improved handling and formatting for dropped speech and muted notices.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.2/NoManos-2.6.2.zip" length="271862167" type="application/octet-stream" sparkle:edSignature="7T6wE05CpVnLe/R9QsQCrBaXYxCZ2ByMe+fmhQ6Qw7ifNh4dPsRv4cFxXoyNI23C+mHVRHjoXaezJJrD215bAw=="/>
-        </item>
-        <item>
-            <title>2.6.1</title>
-            <pubDate>Sun, 15 Nov 2026 14:53:51 -0800</pubDate>
-            <sparkle:version>20261115224756</sparkle:version>
-            <sparkle:shortVersionString>2.6.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[NoManos 2.6.1
-
-- Audio now recovers automatically after sleep/wake, microphone or headphone changes, and CoreAudio restarts, with retries if the mic fails to start.
-- Typed prompts are handled immediately: they cancel in-progress voice detection and skip wake-word and relevance checks.
-- Muting cleanly stops NoManos's voice; text is formatted better before speaking.
-- The status shows a "Thinking…" indicator while the agent works.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.1/NoManos-2.6.1.zip" length="271665208" type="application/octet-stream" sparkle:edSignature="DMtizX7Uc6gdOaz6e3RUOtozB9M8n8bgPlgiR4Hlh/+Ii0d/ABAcSUi00BPN3cT5prNTEHQZ/WTNP/7h6d5eCw=="/>
         </item>
     </channel>
 </rss>
