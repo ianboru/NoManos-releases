@@ -3,6 +3,20 @@
     <channel>
         <title>NoManos</title>
         <item>
+            <title>2.6.6</title>
+            <pubDate>Fri, 20 Nov 2026 10:09:54 -0800</pubDate>
+            <sparkle:version>20261120180330</sparkle:version>
+            <sparkle:shortVersionString>2.6.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[NoManos 2.6.6
+
+- Voice echo prevention: detect when the microphone picks up NoManos's own speech mid-utterance so it no longer responds to itself.
+- Progress watchdog: back off repeated "still working" notices exponentially instead of announcing them at a fixed interval.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.6/NoManos-2.6.6.zip" length="272418740" type="application/octet-stream" sparkle:edSignature="zEYJdDDhX4Lv2khBdnYfzq8goABYGNO0EpAL5k43gDKlqaVpmv9d4A6W4oR8HQWZ37GwizPF7ALBhjG/2V4+Cw=="/>
+        </item>
+        <item>
             <title>2.6.5</title>
             <pubDate>Thu, 19 Nov 2026 15:24:04 -0800</pubDate>
             <sparkle:version>20261119231753</sparkle:version>
@@ -36,23 +50,6 @@
 - Device volume policy: coordinated volume handling and improved voice processing demand control.
 ]]></description>
             <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.4/NoManos-2.6.4.zip" length="272336685" type="application/octet-stream" sparkle:edSignature="9UNtJo2wZwoMPEA+pR0ObKRVotXwgwXYyIVfYYCzH6soezbBc0joUCTI/JBTyorASpX7Dv4mowDvr8o+4izRAw=="/>
-        </item>
-        <item>
-            <title>2.6.4</title>
-            <pubDate>Tue, 17 Nov 2026 22:18:03 -0800</pubDate>
-            <sparkle:version>20261119000544</sparkle:version>
-            <sparkle:shortVersionString>2.6.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[NoManos 2.6.4
-
-- Task diff view: inspect file diffs across tasks with prompt lineage and request links.
-- Usage-limit recovery: automatic recovery and resumption for tasks stopped by usage limits.
-- Speech recognition recovery: deadline monitoring and reliable recovery after recognition stalls.
-- Stop button isolation: stopping a transcript prompt or thinking generation no longer cancels running background tasks.
-- Device volume policy: coordinated volume handling and improved voice processing demand control.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.4/NoManos-2.6.4.zip" length="272305212" type="application/octet-stream" sparkle:edSignature="8lamTcjZD743CDck0aSYvrpYP54VJrCjbDC7oALveAGaHj8tBXKSgmkL3uiuqF51zddh7CLIFrxs2dv8guZ1Ag=="/>
         </item>
     </channel>
 </rss>
