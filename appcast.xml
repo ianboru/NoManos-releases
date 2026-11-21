@@ -3,6 +3,17 @@
     <channel>
         <title>NoManos</title>
         <item>
+            <title>2.6.7</title>
+            <pubDate>Sat, 21 Nov 2026 13:25:04 -0800</pubDate>
+            <sparkle:version>20261121211841</sparkle:version>
+            <sparkle:shortVersionString>2.6.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Handle OpenCode free-tier usage limit errors with user notice
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.7/NoManos-2.6.7.zip" length="272431515" type="application/octet-stream" sparkle:edSignature="6UDGNU0s2RnWpyJH6qlEE47sypNfMrRca8zDpmz4A1h3JJWiSORLd9sUf1XnCzT2uiGq1Y+HTF51k5XmYWUWAQ=="/>
+        </item>
+        <item>
             <title>2.6.6</title>
             <pubDate>Fri, 20 Nov 2026 10:09:54 -0800</pubDate>
             <sparkle:version>20261120180330</sparkle:version>
@@ -32,24 +43,6 @@
 - Relaunch workflow: verified relaunch script and workflow.
 ]]></description>
             <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.5/NoManos-2.6.5.zip" length="272414268" type="application/octet-stream" sparkle:edSignature="weF6gXUj375NnyvvqA5bQZTWFZ0R+RDuD9rkg1EfaVe3NiHs++voonSdcSaj5aJVfWgJvGJfg/MMWMgrxhiwAw=="/>
-        </item>
-        <item>
-            <title>2.6.4</title>
-            <pubDate>Tue, 17 Nov 2026 22:18:03 -0800</pubDate>
-            <sparkle:version>20261119083604</sparkle:version>
-            <sparkle:shortVersionString>2.6.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[NoManos 2.6.4
-
-- Task title formatting: combined topic and request details with semibold styling in task lists.
-- Task diff view: inspect file diffs across tasks with prompt lineage and request links.
-- Usage-limit recovery: automatic recovery and resumption for tasks stopped by usage limits.
-- Speech recognition recovery: deadline monitoring and reliable recovery after recognition stalls.
-- Stop button isolation: stopping a transcript prompt or thinking generation no longer cancels running background tasks.
-- Device volume policy: coordinated volume handling and improved voice processing demand control.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.4/NoManos-2.6.4.zip" length="272336685" type="application/octet-stream" sparkle:edSignature="9UNtJo2wZwoMPEA+pR0ObKRVotXwgwXYyIVfYYCzH6soezbBc0joUCTI/JBTyorASpX7Dv4mowDvr8o+4izRAw=="/>
         </item>
     </channel>
 </rss>
