@@ -3,6 +3,17 @@
     <channel>
         <title>NoManos</title>
         <item>
+            <title>2.6.9</title>
+            <pubDate>Sun, 22 Nov 2026 00:36:21 -0800</pubDate>
+            <sparkle:version>20261122083012</sparkle:version>
+            <sparkle:shortVersionString>2.6.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[NoManos 2.6.9: Preserve project directories and improve task naming for queued tasks
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.9/NoManos-2.6.9.zip" length="272570474" type="application/octet-stream" sparkle:edSignature="iD+VumPQRXllMxaZnESfkLYMJ3BVVZc+lkIpqBKPckZh0InWz3W7yC1VMLwVGiU+TPDL+BQIxLd5HUd1BdUMDA=="/>
+        </item>
+        <item>
             <title>2.6.8</title>
             <pubDate>Sat, 21 Nov 2026 19:38:39 -0800</pubDate>
             <sparkle:version>20261122033226</sparkle:version>
@@ -23,20 +34,6 @@
             <description sparkle:format="markdown"><![CDATA[Handle OpenCode free-tier usage limit errors with user notice
 ]]></description>
             <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.7/NoManos-2.6.7.zip" length="272431515" type="application/octet-stream" sparkle:edSignature="6UDGNU0s2RnWpyJH6qlEE47sypNfMrRca8zDpmz4A1h3JJWiSORLd9sUf1XnCzT2uiGq1Y+HTF51k5XmYWUWAQ=="/>
-        </item>
-        <item>
-            <title>2.6.6</title>
-            <pubDate>Fri, 20 Nov 2026 10:09:54 -0800</pubDate>
-            <sparkle:version>20261120180330</sparkle:version>
-            <sparkle:shortVersionString>2.6.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[NoManos 2.6.6
-
-- Voice echo prevention: detect when the microphone picks up NoManos's own speech mid-utterance so it no longer responds to itself.
-- Progress watchdog: back off repeated "still working" notices exponentially instead of announcing them at a fixed interval.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.6/NoManos-2.6.6.zip" length="272418740" type="application/octet-stream" sparkle:edSignature="zEYJdDDhX4Lv2khBdnYfzq8goABYGNO0EpAL5k43gDKlqaVpmv9d4A6W4oR8HQWZ37GwizPF7ALBhjG/2V4+Cw=="/>
         </item>
     </channel>
 </rss>
