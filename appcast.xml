@@ -3,6 +3,17 @@
     <channel>
         <title>NoManos</title>
         <item>
+            <title>2.6.8</title>
+            <pubDate>Sat, 21 Nov 2026 19:38:39 -0800</pubDate>
+            <sparkle:version>20261122033226</sparkle:version>
+            <sparkle:shortVersionString>2.6.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Maintenance release 2.6.8.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.8/NoManos-2.6.8.zip" length="272491182" type="application/octet-stream" sparkle:edSignature="sL+exR8c24Fn26qidCMAb5aUsqUBbLqmczhnXJ/gB79dQlGyVR/Bhlq7gnf080Hs+o77Qaq3D94KDOnl1dFUCw=="/>
+        </item>
+        <item>
             <title>2.6.7</title>
             <pubDate>Sat, 21 Nov 2026 13:25:04 -0800</pubDate>
             <sparkle:version>20261121211841</sparkle:version>
@@ -26,23 +37,6 @@
 - Progress watchdog: back off repeated "still working" notices exponentially instead of announcing them at a fixed interval.
 ]]></description>
             <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.6/NoManos-2.6.6.zip" length="272418740" type="application/octet-stream" sparkle:edSignature="zEYJdDDhX4Lv2khBdnYfzq8goABYGNO0EpAL5k43gDKlqaVpmv9d4A6W4oR8HQWZ37GwizPF7ALBhjG/2V4+Cw=="/>
-        </item>
-        <item>
-            <title>2.6.5</title>
-            <pubDate>Thu, 19 Nov 2026 15:24:04 -0800</pubDate>
-            <sparkle:version>20261119231753</sparkle:version>
-            <sparkle:shortVersionString>2.6.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[NoManos 2.6.5
-
-- Voice routing & relevance: preserve requests alongside listening and detail commands, and incorporate recent conversation context in relevance decisions.
-- Task tracking: retain useful task titles through retries and maintain task prompt lineage.
-- Usage recovery & progress: use the active harness for recovery and monitor background progress with silence watchdog warnings.
-- Model discovery: cached model discovery, updated quota mappings, and expanded model limit pool.
-- Relaunch workflow: verified relaunch script and workflow.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.5/NoManos-2.6.5.zip" length="272414268" type="application/octet-stream" sparkle:edSignature="weF6gXUj375NnyvvqA5bQZTWFZ0R+RDuD9rkg1EfaVe3NiHs++voonSdcSaj5aJVfWgJvGJfg/MMWMgrxhiwAw=="/>
         </item>
     </channel>
 </rss>
