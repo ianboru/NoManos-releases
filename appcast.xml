@@ -3,6 +3,20 @@
     <channel>
         <title>NoManos</title>
         <item>
+            <title>2.6.11</title>
+            <pubDate>Tue, 24 Nov 2026 18:59:26 -0500</pubDate>
+            <sparkle:version>20261124235352</sparkle:version>
+            <sparkle:shortVersionString>2.6.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[• Adds transcript view bottom tracking and auto-scroll behavior.
+• Expands table rows in detail views to fit wrapped content.
+• Refines system prompt sections and task progress update handling.
+• Includes marketing metadata sync and preview asset improvements.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.11/NoManos-2.6.11.zip" length="272672913" type="application/octet-stream" sparkle:edSignature="xINsJ5xHsDrd3vDUw/GWXuqHz5TKUbT4Ja9fSlyQtF3/jm9wm1c5J4TCK4aF6x4Anbd7DcTdErlKE8eEEyqdBg=="/>
+        </item>
+        <item>
             <title>2.6.10</title>
             <pubDate>Mon, 23 Nov 2026 23:48:09 -0500</pubDate>
             <sparkle:version>20261124044242</sparkle:version>
@@ -27,17 +41,6 @@
             <description sparkle:format="markdown"><![CDATA[NoManos 2.6.9: Preserve project directories and improve task naming for queued tasks
 ]]></description>
             <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.9/NoManos-2.6.9.zip" length="272570474" type="application/octet-stream" sparkle:edSignature="iD+VumPQRXllMxaZnESfkLYMJ3BVVZc+lkIpqBKPckZh0InWz3W7yC1VMLwVGiU+TPDL+BQIxLd5HUd1BdUMDA=="/>
-        </item>
-        <item>
-            <title>2.6.8</title>
-            <pubDate>Sat, 21 Nov 2026 19:38:39 -0800</pubDate>
-            <sparkle:version>20261122033226</sparkle:version>
-            <sparkle:shortVersionString>2.6.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[Maintenance release 2.6.8.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.8/NoManos-2.6.8.zip" length="272491182" type="application/octet-stream" sparkle:edSignature="sL+exR8c24Fn26qidCMAb5aUsqUBbLqmczhnXJ/gB79dQlGyVR/Bhlq7gnf080Hs+o77Qaq3D94KDOnl1dFUCw=="/>
         </item>
     </channel>
 </rss>
