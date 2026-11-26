@@ -3,6 +3,17 @@
     <channel>
         <title>NoManos</title>
         <item>
+            <title>2.6.14</title>
+            <pubDate>Thu, 26 Nov 2026 15:53:30 -0500</pubDate>
+            <sparkle:version>20261126204724</sparkle:version>
+            <sparkle:shortVersionString>2.6.14</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[Queued-to-parallel task conversion with improved retry handling, voice harness switching for misheard phrases, unified deterministic relevance checks and acknowledgment cleanup, and per-task topic assignment.
+]]></description>
+            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.14/NoManos-2.6.14.zip" length="272694227" type="application/octet-stream" sparkle:edSignature="udEWKdI9gg10a/w1AMMEa93xOjBPmZ+lYn1KlgDcjO7YpgQLoQAsyoXahKp7C3oDLtsRqEoTqDdWMZiOpTt/Ag=="/>
+        </item>
+        <item>
             <title>2.6.13</title>
             <pubDate>Thu, 26 Nov 2026 01:03:12 -0500</pubDate>
             <sparkle:version>20261126055615</sparkle:version>
@@ -23,20 +34,6 @@
             <description sparkle:format="markdown"><![CDATA[Free trial is now 30 days. Adds a setting for echo cancellation and audio ducking, updated in-app guide with task commands, and transcript and voice improvements.
 ]]></description>
             <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.12/NoManos-2.6.12.zip" length="272677606" type="application/octet-stream" sparkle:edSignature="8GrZOU1Ng5ihLYd7ZO+cvspmXya5NWxzlD3MKaUcetxnhnpQ+JtpCj7OxAdlNh7juqoJ1IObM1MGfvPb2BzuCA=="/>
-        </item>
-        <item>
-            <title>2.6.11</title>
-            <pubDate>Tue, 24 Nov 2026 18:59:26 -0500</pubDate>
-            <sparkle:version>20261124235352</sparkle:version>
-            <sparkle:shortVersionString>2.6.11</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[• Adds transcript view bottom tracking and auto-scroll behavior.
-• Expands table rows in detail views to fit wrapped content.
-• Refines system prompt sections and task progress update handling.
-• Includes marketing metadata sync and preview asset improvements.
-]]></description>
-            <enclosure url="https://github.com/ianboru/NoManos-releases/releases/download/v2.6.11/NoManos-2.6.11.zip" length="272672913" type="application/octet-stream" sparkle:edSignature="xINsJ5xHsDrd3vDUw/GWXuqHz5TKUbT4Ja9fSlyQtF3/jm9wm1c5J4TCK4aF6x4Anbd7DcTdErlKE8eEEyqdBg=="/>
         </item>
     </channel>
 </rss>
